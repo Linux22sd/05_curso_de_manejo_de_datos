@@ -7,5 +7,9 @@ class ValidateTest extends TestCase{
         $email = Validate::email('alexloudog@hotmail.com');
         $this->assertTrue($email);
     }
+    public function test_url(){
+        $url = Validate::url('https://www.youtube.com/');
+        $this->assertTrue($url);
+    }
 }
 ?>

@@ -11,5 +11,9 @@ class ValidateTest extends TestCase{
         $url = Validate::url('https://www.youtube.com/');
         $this->assertTrue($url);
     }
+    public function test_password(){
+        $password = Validate::password('Alex02_32');
+        $this->assertTrue($password);
+    }
 }
 ?>
